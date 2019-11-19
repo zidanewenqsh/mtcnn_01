@@ -1,0 +1,24 @@
+[net_01_1]
+SAVE_DIR = ..\save\20190910
+PIC_DIR = D:\datasets\save_10261_20190725\pic
+LABEL_DIR = D:\datasets\save_10261_20190725\label
+NETFILE_NAME = net_01_1
+NETFILE_EXTENTION = pt
+
+ALPHA = 0.5
+
+CONTINUETRAIN = True
+NEEDTEST = False
+NEEDSAVE = False
+EPOCH = 1000
+BATCHSIZE = 256
+NUMWORKERS = 4
+LR = 1e-3
+ISCUDA = True
+SAVEDIR_EPOCH = ..\save\netbackup
+Test_IMG = ../test/005290.jpg
+PRETRAINED_PNET = ../param/pnet_07.pth
+PRETRAINED_RNET = ../param/rnet_07_4.pth
+PRETRAINED_ONET = ../param/onet_07_4.pth
+RECORDPOINT = 10
+TESTPOINT = 100

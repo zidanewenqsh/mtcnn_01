@@ -23,7 +23,6 @@ def makedir(path):
 
 def toTensor(data):
     '''
-
     :param data:
     :return:
     '''
@@ -40,7 +39,6 @@ def toTensor(data):
 
 def toNumpy(data):
     '''
-
     :param data:
     :return:
     '''
@@ -55,7 +53,6 @@ def toNumpy(data):
 
 def toList(data):
     '''
-
     :param data:
     :return:
     '''
@@ -96,7 +93,6 @@ def isBoxes(boxes):
 # iou
 def iou(box, boxes, isMin=False):
     '''
-
     :param box:
     :param boxes:
     :param isMin:
@@ -167,6 +163,3 @@ def offsetToCord(offset, _side):
     y2 = _side + offset[3] * _side
     box = [int(x) for x in [x1, y1, x2, y2]]
     return box
-
-
-
